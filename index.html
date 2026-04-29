@@ -21,6 +21,7 @@
   <main>
   
   <section class="hero">
+    <img src="assets/images/hero-image.jpg" alt="Marble table">
     <h2>Reliable sourcing. Verified quality.</h2>
     <p>We deliver carefully selected materials and products with strict quality control.</p>
   </section>
@@ -42,7 +43,11 @@
 </main>
 
 <footer>
-  <p>© Nordic Trade</p>
+  <p>© <span id="year"></span> Nordic Trade</p>
 </footer>
-  </body>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
